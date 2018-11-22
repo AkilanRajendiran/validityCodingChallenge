@@ -4,8 +4,8 @@ Build a Spring boot application to process duplicates in the CSV files
 
 ## Application Features
 1. File upload feature to accept the CSV files and upon submission shows the duplicates and non-duplicates
-2. Validation for tye ".CSV" 
-3. Results shows the count and rows of Duplicates and non-duplicates from the file
+2. Validation for type ".CSV" 
+3. Shows the results with count and rows of Duplicates and non-duplicates from the file
 4. Dokerized the application
 ## End points for app 
 localhost:8080/ - Landing page to upload files
