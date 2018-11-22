@@ -34,7 +34,7 @@ You can also run the app without packaging it using -
 mvn spring-boot:run
 ```
 ## Application Features
--- File upload feature to accept the CSV files and upon submission shows the duplicates and non-duplicates
--- Validation for tye ".CSV" 
--- Results shows the count and rows of Duplicates and non-duplicates from the file
--- Dokerized the application
+1. File upload feature to accept the CSV files and upon submission shows the duplicates and non-duplicates
+2. Validation for tye ".CSV" 
+3. Results shows the count and rows of Duplicates and non-duplicates from the file
+4. Dokerized the application
