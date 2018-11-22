@@ -38,3 +38,6 @@ mvn spring-boot:run
 2. Validation for tye ".CSV" 
 3. Results shows the count and rows of Duplicates and non-duplicates from the file
 4. Dokerized the application
+## End points for app 
+localhost:8080/ - Landing page to upload files
+localhost:8080/upload - Show results of file processing
