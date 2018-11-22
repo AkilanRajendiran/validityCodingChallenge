@@ -44,9 +44,9 @@ mvn spring-boot:run
 ```
 
 ** 3. Run in docker CLI
-docker pull akil06/validitychallenge:processduplicates
-docker run -p 8080:8080 <imagename> akil06/validitychallenge:processduplicates
-docker - machine ls (-> to get the IP on which the process is running)
- hit the end point
- IP:8080/ in browser to launch the app 
+1. docker pull akil06/validitychallenge:processduplicates
+2. docker run -p 8080:8080 <imagename> akil06/validitychallenge:processduplicates
+3. docker - machine ls (-> to get the IP on which the process is running)
+ 4. hit the end point
+    IP:8080/ in browser to launch the app 
   
