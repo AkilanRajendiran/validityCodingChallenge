@@ -1,6 +1,6 @@
-# Spring Boot and Thymeleaf Example
+# Build Process Duplicate App
 
-Build a simple Hello World application using Spring Boot and Thymeleaf
+Build a Spring boot application to process duplicates in the CSV files
 
 ## Requirements
 
@@ -8,30 +8,33 @@ Build a simple Hello World application using Spring Boot and Thymeleaf
 
 2. Maven - 3.x.x
 
+3. Docker 17.05
+
+-- the application is built to get the file(CSV) from the user,then it will process the file based on the input.
+
 ## Steps to setup
 
 **1. Clone the application**
 
 ```bash
-git clone https://github.com/callicoder/spring-boot-thymeleaf-tour.git
+git clone https://github.com/AkilanRajendiran/validityCodingChallenge.git
 ```
 
 **2. Build and run the app using maven**
 
 ```bash
-cd spring-boot-thymeleaf-tour
+cd processDuplicatesApp
 mvn package
-java -jar target/thymeleaf-tour-0.0.1-SNAPSHOT.jar
+java -jar target/process-duplicates-0.0.1-SNAPSHOT.jar
 ```
 
 You can also run the app without packaging it using -
 
-```bash
+```bash 
 mvn spring-boot:run
 ```
-
-## Tutorial
-
-You can find the tutorial for this application on my blog -
-
-<https://www.callicoder.com/spring-boot-maven-thymeleaf-tutorial/>
+## Application Features
+-- File upload feature to accept the CSV files and upon submission shows the duplicates and non-duplicates
+-- Validation for tye ".CSV" 
+-- Results shows the count and rows of Duplicates and non-duplicates from the file
+-- Dokerized the application
