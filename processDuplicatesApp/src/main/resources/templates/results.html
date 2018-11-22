@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            align-content: center;
+        }
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <a href="/">Go back>></a>
+        <h1>Duplicate Entries</h1> <h1> <b>Count :</b><count th:text ="${duplicateCount}"> </count> </h1>
+        <table align="center">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Company</th>
+                <th>Email</th>
+                <th>Address 1</th>
+                <th>Address 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Phone</th>
+            </tr>
+            <tr th:each = "data : ${jsonArrayForDuplicates}">
+
+                <td th:text="${data.firstName}">firstName</td>
+                <td th:text="${data.lastName}">lastName</td>
+                <td th:text="${data.company}">lastName</td>
+                <td th:text="${data.email}">email</td>
+                <td th:text="${data.address1}">Address1</td>
+                <td th:text="${data.address2}">Address2</td>
+                <td th:text="${data.city}">City</td>
+                <td th:text="${data.state}">State</td>
+                <td th:text="${data.zip}">Zip</td>
+                <td th:text="${data.phone}">Phone</td>
+
+            </tr>
+        </table>
+        <br> </br>
+        <h2>Non Duplicate Entries</h2> <h2> <b>Count :</b> <count th:text="${nonDuplicateCount}"></count> </h2>
+        <table align="center">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Company</th>
+                <th>Email</th>
+                <th>Address 1</th>
+                <th>Address 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Phone</th>
+            </tr>
+            <tr th:each = "data : ${jsonArrayForNonDuplicates}">
+
+                <td th:text="${data.firstName}">firstName</td>
+                <td th:text="${data.lastName}">lastName</td>
+                <td th:text="${data.company}">lastName</td>
+                <td th:text="${data.email}">email</td>
+                <td th:text="${data.address1}">Address1</td>
+                <td th:text="${data.address2}">Address2</td>
+                <td th:text="${data.city}">City</td>
+                <td th:text="${data.state}">State</td>
+                <td th:text="${data.zip}">Zip</td>
+                <td th:text="${data.phone}">Phone</td>
+
+            </tr>
+        </table>
+
+
+
+</body>
+</html>
